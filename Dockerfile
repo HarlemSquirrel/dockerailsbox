@@ -36,7 +36,7 @@ RUN gem install bundler && bundle install
 RUN torquebox deploy
 
 # Expose the ports we care about
-EXPOSE 8080 9990
+EXPOSE 8080
 
 # Set the initial command to run
 CMD ["/home/squirrel/torquebox-3.2.0/jboss/bin/standalone.sh", "-b", "0.0.0.0"]

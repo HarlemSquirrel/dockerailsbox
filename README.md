@@ -6,8 +6,10 @@ A sample [Rails](http://rubyonrails.org/) 4 application running on [TorqueBox](h
 
 ```sh
 $ docker build -t dockerailsbox .
-$ docker run -it --rm -p 8080:8080 -p 9990:9990 --name drb dockerailsbox
+$ docker run -it --rm -p 8080:8080 --name drb dockerailsbox
 ```
+
+View the running app at http://localhost:8080 and http://localhost:8080/posts
 
 ### Stop the docker containers by name
 
